@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gamev1.css">
+</head>
+<body>
+    
+    <!-- header -->
+   <header id="header">
+    <nav>
+        <img src="/Logos/logohome.png" alt="" id="logo">
+        <div id="liens">
+            <a href="index.html" >HOME</a>
+            <a href="#" class="active">GAME</a>
+        </div>
+    </nav>
+    <div class="phrase"><p>  Let's play a litle game...</p></div>
+   </header> 
+<!-- fin header -->
+   <!-- scrollbar -->
+   <div class="scroolbar">
+    <a href="#header"><img src="/Logos/logo_bat_flèche.png" alt=""></a>
+    <img src="/Logos/icon_facebook.png" alt="" class="icones">
+    <img src="/Logos/icon_ig.png" alt="" class="icones">
+    <img src="/Logos/icon_tw.png" alt="" class="icones">
+     <a href="#footer"> <img src="/Logos/logo_bat_flèche_2.png" alt=""></a>
+</div>
+<div class="fleche">
+    <img src="/Logos/flèche_down_header.png" alt="" id="fleche">
+</div>
+ <!--fin scrollbar -->
+    <div id="container">
+        <img src="/batgame/Batgame_2.png" id="imageinitial">
+
+        <div id="images" >
+
+        </div>
+
+        <h2 id="numero" ></h2>
+        <h2 id="question" ></h2>
+        <ul id="answers" >
+            <li class="reponse1" ><input type="checkbox" id="a" ><label id="option1" for="a"></label></li>
+            <li class="reponse2" ><input type="checkbox" id="b" ><label id="option2" for="b"></label></li>
+            <li class="reponse3" ><input type="checkbox" id="c" ><label id="option3" for="c"></label></li>
+            <li class="reponse4" ><input type="checkbox" id="d" ><label id="option4" for="d"></label></li>
+        </ul>
+        <button id="button" onclick="demarrer()">Demmarer question</button>
+        <button id="nextbtn" onclick="manaraka()">Question suivante</button>
+        <div id="afficher1" >
+             <h2 id="score" ></h2>
+             <p>Oula ! Heuresement que le Riddler est sous les verrous...Il faut que vous vous repassiez les films,cette fois en enlevant peut-être le masque qui vous a bloqué la vue!Aller,rien n'est perdu!</p>
+             <button id="retour" onclick="redemarrer()" >RECOMENCER LES QUIZ</button>
+        </div>
+        <div id="afficher2" >
+             <h2 id="score2" ></h2>
+             <p>Encore un peu d'entrainement avec les Chevaliers Noir vous serait bénéfique,mais vous pouvez marcher la tête haute vos connaissances sont là.A vous de les consolider ,foncer Gotham est vôtre terrain de chasse!</p>
+              <button id="retour" onclick="redemarrer()" >RECOMENCER LES QUIZ</button>
+        </div>
+        <div id="afficher3" >
+             <h2 id="score3" ></h2>
+             <p>Vous êtes véritablement un supper fan de l'univers de Batman!,Comics ,films,rien ne vous echappe,Bruce Wayne a de qoui être fier,Gotham est en paix et Batman peut prendre sa retrait,vous veillez aux grains</p>
+             <button id="retour" onclick="redemarrer()" >RECOMENCER LES QUIZ</button>
+        </div>
+    </div>
+
+    <script src="gamev1.js"></script>
+</body>
+</html>

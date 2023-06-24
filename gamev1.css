@@ -1,0 +1,202 @@
+
+*,::before,::after{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   
+}
+/*font family*/
+@font-face {
+   font-family: rajhdani;
+   src:("/police/Rajdhani-Medium.ttf");
+ }
+ @font-face {
+   font-family: spaceGrotesk;
+   src: url("/police/SpaceGrotesk-VariableFont_wght.ttf");
+ }
+/*-------------------------------------------*/
+body{
+   background-color: black;
+   color: white;
+
+}
+header{
+   
+   width: 100vw;
+   height: 570px;
+   background-image: url(batgame/Batgame_1.png);
+   background-repeat: no-repeat;
+   background-size: 100vw 90vh;
+}
+nav{
+   padding-top: 5%;
+   padding-left: 3%;
+   margin-left: 10%;
+   margin-right: 10%;
+   padding-bottom: 6%;
+   width: 80%;
+   display: flex;
+   justify-content: space-between;
+   border-bottom: #c4c4c444 3px solid;
+   border-left: #c4c4c444 3px solid;
+   border-right: #c4c4c444 3px solid;
+   flex-wrap: wrap;
+}
+nav #liens{
+   display: flex;
+}
+nav #liens a{
+   text-decoration: none;
+   margin: 0 2em 1em 0;
+   padding: 0 1em 0 0;
+   color: white;
+   
+}
+nav #liens .active{
+   text-decoration: underline;
+   font-weight: bold;
+}
+.phrase{
+   width: 80vw;
+   height: 50vh;
+   margin-left: 10%;
+   margin-right: 10%;
+   border-left: #c4c4c444 3px solid;
+   border-right: #c4c4c444 3px solid;
+   text-transform: uppercase;
+   padding-bottom: 32%;
+   font-weight: 900;
+   font-size: 4.5vw;
+
+}
+.phrase p{
+   padding-top: 8%;
+   width: 50%;
+   padding-left: 9%;
+}
+/*fleche*/
+.fleche{
+   width: 80vw;
+   border-left: #c4c4c444 3px solid;
+   border-right: #c4c4c444 3px solid;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 10.1%;
+   margin-right: 10%;
+}
+.fleche #fleche{
+   padding-bottom: 20%;
+}
+/*-------------------------------------------*/
+
+/*ICONES ET LOGO A DROITES*/
+.scroolbar{
+   width: 20vw;
+   height: 20vh;
+
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   transform: translateY(-30em) translateX(80vw);
+   justify-content: center;
+   align-items: center;
+}
+.scroolbar .icones{
+   padding: 1em 0;
+   width: 1em;
+}
+.scroolbar img {
+   cursor: pointer;
+}
+/*-------------------------------------------*/
+ h1 {
+   font-family: Rajhdani;
+   color: #fff;
+ }
+ 
+ p ,h3,h6,button,a{
+   font-family: spaceGrotesk;
+   color: #fff;
+ }
+ 
+ h2 {
+   font-family: Rajhdani;
+   color: #fff;
+ }
+
+/*effet hover des images et icones */
+
+header img:hover,.scroolbar img:hover,.i img:hover,footer .logos img:hover,header a:hover{
+   filter: sepia(100%) saturate(1680%);
+}
+
+
+#container{
+    width:80vw;
+    height:70vh;
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    justify-content: center;
+    border-left: #c4c4c444 3px solid;
+    border-right: #c4c4c444 3px solid;
+    margin-left: 10.1%;
+    margin-right: 10%;
+    padding: 10%;
+ }
+ #container  img{
+   width: 80%;
+   padding-top: 5%;
+   margin-left: 10%;
+   padding-bottom: 5%;
+}
+ #container li{
+   background-color:#333366;
+   margin:6px 0;
+   list-style:none;
+   }
+ #container #afficher1,#container #afficher2,#container #afficher3{
+ width: 100%;
+ height:300%;
+ background:linear-gradient(150deg,#222222,#da9a44);
+ transform:translateY(-50%);
+ display:none;
+ color:white;
+ /* margin-left: 10.1%; */
+ padding-right: 10%;
+ }
+ #container #images #image1{
+    width: 10vw;
+    transform: translateY(-5vw) translateX(-18vh);
+ }
+ #container #button{
+    width: 70%;
+    background:linear-gradient(20deg,#ffddaa,#da9a44);
+    padding:3% 0 ;
+    font-size: 4vh;
+    text-transform: uppercase;
+ }
+ #container #nextbtn{
+   width: 70%;
+   background:linear-gradient(20deg,#ffddaa,#da9a44);
+   padding:3% 0 ;
+   font-size: 4vh;
+   text-transform: uppercase;
+   display: none;
+}
+
+#container .translate{
+   transform: translateY(23vh);
+}
+ #container #afficher1 h2,#container #afficher2 h2,#container #afficher3 h2{
+ text-transform:uppercase;
+ text-decoration:underline;
+ 
+ }
+ #container #afficher1 button , #container #afficher2 button ,#container #afficher3 button{  
+    background:linear-gradient(20deg,#ffddaa,#da9a44);
+    width:30%;
+    height: 4vh;
+    margin-bottom: 3vh;
+ }
