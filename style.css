@@ -1,4 +1,4 @@
-﻿*,::before,::after{
+*,::before,::after{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -33,10 +33,13 @@
 
 /*effet hover des images et icones */
 
-header img:hover,.scroolbar img:hover,.i img:hover,footer .logos img:hover,header a:hover{
+header img:hover,.scroolbar img:hover,.i img:hover,footer .logos img:hover,header #liens a:hover{
     filter: sepia(100%) saturate(1680%);
 }
 
+header .intro .btn #btnvers:hover{
+    background: linear-gradient(90deg, rgba(255,255,255,0.9) 1%, rgba(125, 25, 25, 0.874) 80%);
+}
 /*-------------------------------------------*/
 body{
     background-color: black;
@@ -151,16 +154,19 @@ header .intro .btn button{
     border-right: #c4c4c444 3px solid;
     align-items: center;
     justify-items: center;
-    /* visibility: hidden;
-    transition: 4s all ease-in; */
+   
 
 }
+
+#cinema p,#cinema h1,#nemesis p,#nemesis h1,#allies p,#allies h1,#cinema #grid ,#nemesis #grid ,#allies #grid{
+    transition: 4s all ease-in;
+}
+
 
 #cinema p,#cinema h1,#nemesis p,#nemesis h1,#allies p,#allies h1{
     width: 80%;
     text-align:justify;
     
-
 }
 #cinema #grid .personne img,#nemesis #grid .personne img,#allies #grid .personne img  {
     width: 100%;
@@ -337,25 +343,11 @@ margin-right: 50%;
 .formulaire{
     font-size: 2vw;
     width: 100vw;
-    height: 110vh;
+    height: 120vh;
     background: linear-gradient(to right bottom, #eddebf42,#19587d71);
 }
 
-.formulaire .contact .afficher{
-    padding-top: 5%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 60%;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-bottom: 40vh;
-    display: none;
-}
-.formulaire .contact .des{
+.formulaire .contact {
     position: absolute;
     padding-top: 5%;
     display: flex;
@@ -369,10 +361,10 @@ margin-right: 50%;
     margin-right: 20%;
     padding-bottom: 40vh;
 }
-.formulaire .contact .des .input::placeholder{
+.formulaire .contact .input::placeholder{
     color: #a9a9a9;
 }
-.formulaire .contact .des .input{
+.formulaire .contact .input{
     width: 100%;
     height: 5vh;
     background: linear-gradient(to right bottom, #eddebf42,#19587d71);
@@ -381,10 +373,10 @@ margin-right: 50%;
     border-color: transparent transparent oldlace transparent;
     margin: 2% 0;
 }
-.formulaire .contact .des #label{
+.formulaire .contact  #label{
   text-align: start;
 }
-.formulaire .contact .des button{
+.formulaire .contact button{
     width: 25%;
     height: 6vh;
     background: linear-gradient(to right bottom, #eddebf42,#19587d71);
@@ -392,26 +384,25 @@ margin-right: 50%;
     cursor: pointer;
 }
 .formulaire .contact #submit{
-    transform: translateX(35vw) translateY(90vh);
-   
     position:absolute;
     cursor: pointer;
     border: none;
     width: 30%;
     height: 6vh;
+    transform: translateX(-8vw) translateY(4vh);
     background: linear-gradient(90deg, rgba(237,222,191,0.3337710084033614) 1%, rgba(125, 25, 25, 0.874) 80%);  
 }
 .formulaire .contact #submit:hover{
     background: linear-gradient(180deg, rgba(237,222,191,0.3337710084033614) 1%, rgba(125, 25, 25, 0.874) 80%);  
     
 }
-.formulaire .contact .des p{
+.formulaire .contact p{
     color: #a9a9a9;
     width: 70%;
     text-align: start;
     padding: 5% 0;
 }
-.formulaire .contact .des select{
+.formulaire .contact select{
     background: linear-gradient(to right bottom, #eddebf42,#19587d71);
     color: #a9a9a9;
     width: 100%;
@@ -424,17 +415,13 @@ margin-right: 50%;
     background-position: right;
     background-size:4%;
 }
-/* .pop_up{
-    display: none;
-    position: absolute;
 
-} */
 .pop_up{
     padding-top: 30%;
     display: none;
     z-index: 1;
     width: 100%;
-    height: 100%;
+    height: 140%;
     border-radius: 5%;
     background-color: #0d3a54;
     position: absolute;
@@ -619,12 +606,9 @@ nav #liens .active{
     font-size: 6vw;
 }
 
-/* bande annonce */
 
-
-/* Responsive mbola tsy maintsy atao   formulaire + sary justice leage entre de624px a 772px */
- /*-------------------------------------------*/
 
 
 
 }
+
