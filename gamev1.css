@@ -82,8 +82,10 @@ nav #liens .active{
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-left: 10.1%;
+   margin-left: 10.2%;
    margin-right: 10%;
+   transform: translateY(-16vh);
+   padding-top: 25vh;
 }
 .fleche #fleche{
    padding-bottom: 20%;
@@ -133,6 +135,9 @@ header img:hover,.scroolbar img:hover,.i img:hover,footer .logos img:hover,heade
 
 
 #container{
+   z-index: 99999;
+   position: absolute;
+   padding-top: 50vh;
     width:80vw;
     height:70vh;
     display:flex;
@@ -141,9 +146,10 @@ header img:hover,.scroolbar img:hover,.i img:hover,footer .logos img:hover,heade
     justify-content: center;
     border-left: #c4c4c444 3px solid;
     border-right: #c4c4c444 3px solid;
-    margin-left: 10.1%;
+    margin-left: 10.2%;
     margin-right: 10%;
-    padding: 10%;
+    transform: translateY(-16vh);
+    padding-bottom: 40vh;
  }
  #container  img{
    width: 80%;
@@ -151,52 +157,130 @@ header img:hover,.scroolbar img:hover,.i img:hover,footer .logos img:hover,heade
    margin-left: 10%;
    padding-bottom: 5%;
 }
- #container li{
-   background-color:#333366;
-   margin:6px 0;
-   list-style:none;
-   }
  #container #afficher1,#container #afficher2,#container #afficher3{
  width: 100%;
- height:300%;
  background:linear-gradient(150deg,#222222,#da9a44);
- transform:translateY(-50%);
+  transform:translateY(-50%); 
  display:none;
  color:white;
- /* margin-left: 10.1%; */
  padding-right: 10%;
+ padding-bottom: 20vh;
  }
+ #container #afficher1 p,#container #afficher2 p,#container #afficher3 p{
+    font-size: 3vw;
+ }
+
+ #container #afficher1 h2,#container #afficher2 h2,#container #afficher3 h2{
+   text-transform:uppercase;
+   text-decoration:underline;
+   
+   }
+   #container #afficher1 #retour , #container #afficher2 #retour ,#container #afficher3 #retour{  
+      background:linear-gradient(20deg,#ffddaa,#da9a44);
+      width:30%;
+      height: 10vh;
+      margin-bottom: 3vh;
+      margin-top: 10vh;
+      margin-left: 20vw;
+   }
+
+
+
  #container #images #image1{
-    width: 10vw;
-    transform: translateY(-5vw) translateX(-18vh);
+    width: 20vw;
+    height: 40vh;
+    transform: translateY(20vh) translateX(-9vW);
  }
+
+ #container #images #image11{
+   width: 20vw;
+   height: 40vh;
+   transform: translateY(80vh) translateX(-10vw);
+}
+#container #images #image2{
+   width: 20vw;
+   height: 40vh;
+   transform: translateY(70vh) translateX(-10vw);
+}
+#container #images #image3{
+   width: 15vw;
+   height: 20vh;
+   transform: translateY(32vh) translateX(55vw);
+}
+ #container #answers, #container #button, #container #nextbtn, #container #question {
+    margin-top: 3vh;
+    margin-left: 20vw;
+ }
+ #container li{
+   background-color:#444147;
+   margin:2% 0;
+   list-style:none;
+   width: 70%;
+   padding-top: 2%;
+   font-size: 3vw;
+   }
  #container #button{
-    width: 70%;
-    background:linear-gradient(20deg,#ffddaa,#da9a44);
+    margin-top: 3%;
+    width: 50%;
+    background:linear-gradient(20deg,#353331,#da9a44);
     padding:3% 0 ;
-    font-size: 4vh;
+    font-size: 2vh;
     text-transform: uppercase;
  }
  #container #nextbtn{
-   width: 70%;
-   background:linear-gradient(20deg,#ffddaa,#da9a44);
+    margin-top: 3%;
+   width: 50%;
+   background:linear-gradient(20deg,#353331,#da9a44);
    padding:3% 0 ;
-   font-size: 4vh;
+   font-size: 2vh;
    text-transform: uppercase;
    display: none;
 }
+#container #question,#container #answers,#container #nextbtn{
+   transform: translateY(-25vh);
+}
+#container #numero{
+   transform: translateY(-35vh) translateX(30vw);
+   font-size: 5vw;
+}
+
 
 #container .translate{
-   transform: translateY(23vh);
+   transform: translateY(40vh);
 }
- #container #afficher1 h2,#container #afficher2 h2,#container #afficher3 h2{
- text-transform:uppercase;
- text-decoration:underline;
+
+
+
+
+
+
+/* footer */
+footer{
  
- }
- #container #afficher1 button , #container #afficher2 button ,#container #afficher3 button{  
-    background:linear-gradient(20deg,#ffddaa,#da9a44);
-    width:30%;
-    height: 4vh;
-    margin-bottom: 3vh;
- }
+   transform: translateY(73.7vh);
+   font-size: 1vw;
+   border-left: #c4c4c444 3px solid;
+   border-right: #c4c4c444 3px solid;
+   margin-left: 10.2%;
+   margin-right: 8.1%;
+   padding-top: 20vh;
+}
+.droit{
+   padding-top: 10%;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+.droit p{
+   margin-left: 10px;
+}
+.logos{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 1%;
+   padding-bottom: 4%;
+}
+/* fin footer */
